@@ -1,0 +1,525 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RentCar</title>
+<!-- font-awesome link -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+
+    <!-- favicon link -->
+    <link rel="shortcut icon" href="/images/favicon.ico" type="image/x-icon">
+
+    <!-- google font link -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@700&family=Rubik:wght@300&display=swap" rel="stylesheet">
+    
+    <!-- Bootstrap link -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+   
+    <!-- custom style link -->
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="responsive_style.css">
+
+</head>
+<body>
+    
+    <nav class="navbar navbar-expand-lg navbar-light bg-light shadow fixed-top">
+        <div class="container navigation-bar mx-lg-5">
+          <a class="navbar-brand fs-3 fw-bold" href="#">RentCar</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse nav-collapse-back navbar-light bg-light" id="navbarTogglerDemo02">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0 fw-bold nav-content d-flex justify-content-between">
+              <li class="nav-item mx-lg-2">
+                <a class="nav-link active" aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item mx-lg-2">
+                <a class="nav-link" href="about.html">About</a>
+              </li>
+              <li class="nav-item mx-lg-2">
+                <a class="nav-link" href="vehical-models.html">vehicle Models</a>
+              </li>
+              <li class="nav-item mx-lg-2">
+                <a class="nav-link" href="testimonials.html">Testimonials</a>
+              </li>
+              <li class="nav-item mx-lg-2">
+                <a class="nav-link" href="team.html">Our Team</a>
+              </li>
+              <li class="nav-item mx-lg-2">
+                <a class="nav-link" href="contact.html">Contact</a>
+              </li>
+            </ul>
+             <!-- <div class=" mt-4">
+              <a href="#contact" class="btn main-btn primary-btn  ">Hire me</a>
+              <a href="#download" class="btn main-btn secondary-btn  ms-4">Get CV</a>
+          </div> -->
+            <div class="d-flex">
+                <button class="btn main-btn px-4 mx-1" type="submit">Sign in</button>
+                <button class="btn main-btn primary-btn px-4 mx-1" type="submit">Register</button>
+            </div>
+          </div>
+        </div>
+      </nav> 
+      
+      
+      <section id="home" class="banner-wrapper">
+        <div class="container ">
+            <div class="row">
+                <div class="col-lg-5 order-lg-1 order-2 banner-content">
+                  <h5>Plan your trip now</h5>
+                    <h1>Save <span>big</span> with our rentCar</h1>
+                    <p>Rent the car of your dreams. Unbeatable price, unlimited miles, flexible pick-up options and much more.</p>
+                    <div class=" mt-4">
+                        <a href="#book" class="btn main-btn primary-btn  ">Book ride</a>
+                        <a href="about.html" class="btn main-btn secondary-btn  ms-4">learn more</a>
+                    </div>
+                </div>
+                <div class="col-lg-7 order-lg-2 order-1">
+                  <div class="hero-bg">
+                    <img src="images/hero-bg.3b5f7a2502f0f81d1490.png" alt="hero-bg">
+                  </div>
+                    <div class="top-right-image">
+                        <img src="images/7-blue-bmw-png-image-download.png" alt="home-img" class="img-fluid">
+                    </div>
+                </div>
+            </div>
+        </div>
+      </section>
+    
+
+  <!-- booking -->
+  <section class="book" id="book">
+
+        <div class="container">
+          <div class="book-content">
+            <div class="book-content-box">
+              <h2>Book a car</h2>
+              <form action="" class="box-form">
+              <div class="box-form__car-type">
+                <h3>Select your car type</h3>
+                <select name="carType" id="carType">
+                  <option value="default"> select your car type</option>
+                     <option value="Baleno">Baleno</option>
+                     <option value="Swift">Swift</option>
+                     <option value="Swift-Dzire">Swift Dzire</option>
+                     <option value="Creta">Creta</option>
+                     <option value="KUV100">KUV100</option>
+                     <option value="Alto K10">Alto K10</option>
+                     <option value="Santro MT">Santro MT</option>
+                     <option value="Verna MT">Verna MT</option>
+                     <option value="City (P)">City (P)</option>
+                     <option value="Grand i10">Grand i10</option>
+                     <option value="Scorpio">Scorpio</option>
+                 </select>
+            </div>
+            <div class="box-form__car-type">
+              <h3>Pick-up</h3>
+              <select name="pick-up" id="pick-up" aria-placeholder="select">
+                <option value="">select pick-up location</option>
+                <option value="Delhi NCR">Delhi NCR</option>
+                <option value="Meerut">Meerut</option>
+                <option value="Hapur">Hapur</option>
+                <option value="Mawana">Mawana</option>
+                <option value="Lucknow">Lucknow</option>
+              </select>
+            </div>
+            <div class="box-form__car-type">
+              <h3>Drop-of</h3>
+              <select name="drop-of" id="drop-of" aria-placeholder="select">
+                <option value="">select drop-off location</option>
+                <option value="Delhi NCR">Delhi NCR</option>
+                <option value="Meerut">Meerut</option>
+                <option value="Hapur">Hapur</option>
+                <option value="Mawana">Mawana</option>
+                <option value="Lucknow">Lucknow</option>
+              </select>
+            </div>
+                <div class="box-form__car-type">
+                    <h3>Pick-up</h3>
+                    <input id="picktime" type="date">
+                </div>
+                <div class="box-form__car-type">
+                    <h3>Drop-of</h3>
+                    <input id="droptime" type="date">
+                </div>
+                <button type="submit">Search</button>
+            </form>
+          </div>
+        </div>
+      </div>
+</section>
+            
+    <!-- Features -->
+
+<section id="features" class="features">
+      <div class="container">
+      <div class="features-title">
+          <h4>Plan your trip now!</h4>
+          <h2>Quick and easy car rental</h2>
+      </div>
+      <div class="row">
+          <div class="feature-box col-lg-4  col-md-6">
+            <img class="feature-img" src="images/download.png" alt="" srcset="">
+              <h3 class="feature-title">Select Car</h3>
+              <P>We offers a wide range of vehicles for all your driving needs. We 
+                have the perfect car to meet your needs. </P>
+          </div>
+          <div class="feature-box col-lg-4 col-md-6 ">
+            <img class="feature-img" src="images/download (1).png" alt="" srcset="">
+              <h3 class="feature-title">Contact Operator</h3>
+              <p>Our knowledgeable and friendly operators are always ready to 
+                help with any questions or concerns</p>
+          </div>
+          <div class="feature-box col-lg-4 col-md-12 ">
+            <img class="feature-img" src="images/download (2).png" alt="" srcset="">
+              <h3 class="feature-title pt-3">Let's Drive</h3>
+              <p>Whether you're hitting the open road, we've got you covered 
+                with our wide range of modern cars</p>
+          </div>
+      </div>
+    </div>
+</section>
+
+
+
+  <section class="vehicalmodel" id="vehical">
+      <div class="container">
+        <div class="vehical-title">
+          <h4>Vehicle Models</h4>
+          <h2>Our rental fleet</h2>
+        </div>
+        <div class="row">
+          <!-- Card 1 -->
+          <div class="col-lg-3 col-md-6 mb-4 vehical-card-box">
+            <div class="card vehical-card" style="width: 18rem;">
+              <div class="vehical-card-content">
+                <img class=" vehical-model-car-img" src="images/car-types/baleno.png" alt="Maruti Baleno, Self Drive Car - Revv">
+                <div class="vehical-card-h1 plp-producer-text-color">Maruti</div>
+                <div class="vehical-card-h2">Baleno</div>
+                <div class="car-segment-wrapper d-flex align-items-center justify-content-between">
+                  <div class="car-segment-margin">
+                    <img class="description-icon" src="images/card/iconDiesel.svg"> <span class="plp-fuel-text">Diesel</span>
+                  </div>
+                  <div class="car-segment-margin">
+                    <img class="description-icon" src="images/card/iconTransmission.svg"> <span class="plp-fuel-text">Manual</span>
+                  </div>
+                  <div class="car-segment-margin">
+                    <img class="description-icon" src="images/card/iconSeat.svg"> <span class="plp-fuel-text">5 Seater</span>
+                  </div>
+                </div>
+                <div class="d-flex justify-content-between align-items-center book-btn-wrapper">
+                  <div>
+                    <i class="fa fa-inr"></i><span class="vehical-rental-amt">11,965</span>
+                  </div>
+                  <button class="btn vehical-rental-book">Book <i class="fa-solid fa-chevron-right book-arrow"></i></button>
+                </div>
+                <div class="vehical-km-label">770 kms | Prices <span class="font-w-500 plp-exclude-text">Exclude</span> fuel cost</div>
+              </div>
+            </div>
+          </div>
+        
+          <!-- Card 2 -->
+          <div class="col-lg-3 col-md-6 mb-4 vehical-card-box">
+            <div class="card vehical-card" style="width: 18rem;">
+              <div class="vehical-card-content">
+                <img class="vehical-model-car-img" src="images/car-types/swift.png" alt="Swift, Self Drive Car - CR">
+                <div class="vehical-card-h1 plp-producer-text-color">Maruti</div>
+                <div class="vehical-card-h2">Swift</div>
+                <div class="car-segment-wrapper d-flex align-items-center justify-content-between">
+                  <div class="car-segment-margin">
+                    <img class="description-icon" src="images/card/iconDiesel.svg"> <span class="plp-fuel-text">Diesel</span>
+                  </div>
+                  <div class="car-segment-margin">
+                    <img class="description-icon" src="images/card/iconTransmission.svg"> <span class="plp-fuel-text">Manual</span>
+                  </div>
+                  <div class="car-segment-margin">
+                    <img class="description-icon" src="images/card/iconSeat.svg"> <span class="plp-fuel-text">5 Seater</span>
+                  </div>
+                </div>
+                <div class="d-flex justify-content-between align-items-center book-btn-wrapper">
+                  <div>
+                    <i class="fa fa-inr"></i><span class="vehical-rental-amt">10,975</span>
+                  </div>
+                  <button class="btn vehical-rental-book">Book <i class="fa-solid fa-chevron-right book-arrow"></i></button>
+                </div>
+                <div class="vehical-km-label">770 kms | Prices <span class="font-w-500 plp-exclude-text">Exclude</span> fuel cost</div>
+              </div>
+            </div>
+          </div>
+    
+          <!-- Card 3 -->
+          <div class="col-lg-3 col-md-6 mb-4 vehical-card-box">
+            <div class="card vehical-card" style="width: 18rem;">
+              <div class="vehical-card-content">
+                <img class="vehical-model-car-img" src="images/car-types/dzire.png" alt="Swift Dzire, Self Drive Car - CR">
+                <div class="vehical-card-h1 plp-producer-text-color">Maruti</div>
+                <div class="vehical-card-h2">Swift Dzire</div>
+                <div class="car-segment-wrapper d-flex align-items-center justify-content-between">
+                  <div class="car-segment-margin">
+                    <img class="description-icon" src="images/card/iconDiesel.svg"> <span class="plp-fuel-text">Diesel</span>
+                  </div>
+                  <div class="car-segment-margin">
+                    <img class="description-icon" src="images/card/iconTransmission.svg"> <span class="plp-fuel-text">Manual</span>
+                  </div>
+                  <div class="car-segment-margin">
+                    <img class="description-icon" src="images/card/iconSeat.svg"> <span class="plp-fuel-text">5 Seater</span>
+                  </div>
+                </div>
+                <div class="d-flex justify-content-between align-items-center book-btn-wrapper">
+                  <div>
+                    <i class="fa fa-inr"></i><span class="vehical-rental-amt">10,369</span>
+                  </div>
+                  <button class="btn vehical-rental-book">Book <i class="fa-solid fa-chevron-right book-arrow"></i></button>
+                </div>
+                <div class="vehical-km-label">770 kms | Prices <span class="font-w-500 plp-exclude-text">Exclude</span> fuel cost</div>
+              </div>
+            </div>
+          </div>
+    
+          <!-- Card 4 -->
+          <div class="col-lg-3 col-md-6 mb-4 vehical-card-box">
+            <div class="card vehical-card" style="width: 18rem;">
+              <div class="vehical-card-content">
+                <img class="vehical-model-car-img" src="images/car-types/Creta.png" alt="Hyundai Creta, Self Drive Car - CR">
+                <div class="vehical-card-h1 plp-producer-text-color">Hyundai</div>
+                <div class="vehical-card-h2">Creta</div>
+                <div class="car-segment-wrapper d-flex align-items-center justify-content-between">
+                  <div class="car-segment-margin">
+                    <img class="description-icon" src="images/card/iconDiesel.svg"> <span class="plp-fuel-text">Diesel</span>
+                  </div>
+                  <div class="car-segment-margin">
+                    <img class="description-icon" src="images/card/iconTransmission.svg"> <span class="plp-fuel-text">Manual</span>
+                  </div>
+                  <div class="car-segment-margin">
+                    <img class="description-icon" src="images/card/iconSeat.svg"> <span class="plp-fuel-text">5 Seater</span>
+                  </div>
+                </div>
+                <div class="d-flex justify-content-between align-items-center book-btn-wrapper">
+                  <div>
+                    <i class="fa fa-inr"></i><span class="vehical-rental-amt">17,609</span>
+                  </div>
+                  <button class="btn vehical-rental-book">Book <i class="fa-solid fa-chevron-right book-arrow"></i></button>
+                </div>
+                <div class="vehical-km-label">770 kms | Prices <span class="font-w-500 plp-exclude-text">Exclude</span> fuel cost</div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class=" mt-4 d-flex justify-content-center">
+          <a href="vehical-models.html" class="btn main-btn secondary-btn ms-4 ">More <i class="fa-solid fa-chevron-right book-arrow"></i></a>
+        </div>
+      </div>
+  </section>
+  
+  
+  <section class="text-banner-section">
+    <div class="container">
+      <div class="text-banner-content">
+        <div class="text-banner-content__text">
+          <h2>Save big with our cheap car rental!</h2>
+          <p>Top Airports. Local Suppliers. <span>24/7</span> Support.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+    
+  <section class="choose-section">
+    <div class="container">
+      <div class="choose-container d-flex flex-column">
+        <img class="choose-container-img" src="images/main.70cd75042bdf42515d92.png" alt="" srcset="">
+      </div>
+      <div class="text-container row ">
+        <div class="text-container-left col-lg-7 d-flex flex-column">
+          <h4>Why Choose us</h4>
+          <h2>best valued deals you will ever find</h2>
+          <p>Discover the best deals you'll ever find with our unbeatable offers. 
+            We're dedicated to providing you with the best value for your
+            money, so you can enjoy top-quality services and products without
+            breaking the bank. Our deals are designed to give you the ultimate
+            renting experience, so don't miss out on your chance to save big.</p>
+          <div class=" mt-4">
+            <a href="#contact" class="btn main-btn primary-btn  ">Find Details <i class="fa-solid fa-chevron-right book-arrow"></i></a>
+        </div>
+        </div>
+        <div class="text-container-right col-lg-5 d-flex flex-column ">
+          <div class="text-container-right-box">
+            <img src="images/download (3).png" alt="car-img">
+            <div class="text-container__right__box__text">
+              <h4>Cross Country Drive</h4>
+              <p>Take your driving experience to the next level with our top-notch vehicles for your cross-country adventures.</p>
+            </div>
+          </div>
+
+          <div class="text-container-right-box">
+            <img src="images/download (4).png" alt="car-img">
+            <div class="text-container__right__box__text">
+              <h4>Cross Country Drive</h4>
+              <p>Take your driving experience to the next level with our top-notch vehicles for your cross-country adventures.</p>
+            </div>
+          </div>
+
+          <div class="text-container-right-box">
+            <img src="images/download (5).png" alt="car-img">
+            <div class="text-container__right__box__text">
+              <h4>Cross Country Drive</h4>
+              <p>Take your driving experience to the next level with our top-notch vehicles for your cross-country adventures.</p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+<section class="testimonials-section">
+  <div class="container-md">
+    <div class="testimonials-content">
+      <div class="testimonials-content__title">
+        <h4>Reviewed by People</h4>
+        <h2>Client's Testimonials</h2>
+        <p>Discover the positive impact we've made on the our clients by reading through their testimonials. Our clients have experienced our service and results, and they're eager to share their positive experiences with you.</p>
+      </div>
+      <div class="all-testimonials">
+        <div class="all-testimonials__box">
+          <p>"We rented a car from this website and had an amazing experience! The booking was easy and the rental rates were very affordable. "</p>
+          <div class="all-testimonials__box__name">
+            <div class="all-testimonials__box__name__profile">
+              <img src="images/testimonials-img/parry-hotter.jpg" alt="user_img">
+              <span>
+                <h4>Parry Hotter</h4>
+                <p>Belgrade</p>
+              </span>
+            </div>
+          </div>
+        </div>
+        <div class="all-testimonials__box box-2">
+          <p>"The car was in great condition and made our trip even better. Highly recommend for this car rental website!"</p>
+          <div class="all-testimonials__box__name"><div class="all-testimonials__box__name__profile">
+            <img src="images/testimonials-img/ron-rizzly.jpg" alt="user_img">
+            <span><h4>Ron Rizzly</h4><p>Novi Sad</p></span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+</section>
+
+<div class="book-banner">
+  <div class="book-banner__overlay">
+  </div>
+  <div class="container">
+      <div class="text-content">
+          <h2>Book a car by getting in touch with us</h2>
+          <span><h3> Call - (123) 456-7869</h3></span>
+      </div>
+  </div>
+</div>
+
+<section class="faq-section">
+  <div class="container">
+    <div class="faq-content">
+      <div class="faq-content__title">
+        <h5>FAQ</h5>
+        <h2>Frequently Asked Questions</h2>
+        <p>Frequently Asked Questions About the Car Rental Booking Process on Our Website: Answers to Common Concerns and Inquiries.</p>
+      </div>
+      <div class="all-questions">
+        <div class="accordion" id="accordionPanelsStayOpenExample">
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="true" aria-controls="panelsStayOpen-collapseOne">
+                1. What is special about comparing rental car deals?
+              </button>
+            </h2>
+            <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse show">
+              <div class="accordion-body">
+                <strong>Comparing rental car deals is important as it helps find the best deal that fits your budget and requirements, ensuring you get the most value for your money.</strong> By comparing various options, you can find deals that offer lower prices, additional services, or better car models. You can find car rental deals by researching online and comparing prices from different rental companies.            </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseTwo" aria-expanded="false" aria-controls="panelsStayOpen-collapseTwo">
+                2. How do I find the car rental deals?
+              </button>
+            </h2>
+            <div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse">
+              <div class="accordion-body">
+                <strong>You can find car rental deals by researching online and comparing prices from different rental companies.</strong> Websites such as Expedia, Kayak, and Travelocity allow you to compare prices and view available rental options. It is also recommended to sign up for email newsletters and follow rental car companies on social media to be informed of any special deals or promotions.            </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseThree" aria-expanded="false" aria-controls="panelsStayOpen-collapseThree">
+                3. How do I find such low rental car prices?
+              </button>
+            </h2>
+            <div id="panelsStayOpen-collapseThree" class="accordion-collapse collapse">
+              <div class="accordion-body">
+                <strong>Book in advance: Booking your rental car ahead of time can often result in lower prices.</strong> Compare prices from multiple companies: Use websites like Kayak, Expedia, or Travelocity to compare prices from multiple rental car companies. Look for discount codes and coupons: Search for discount codes and coupons that you can use to lower the rental price. Renting from an off-airport location can sometimes result in lower prices.            </div>
+             </div>
+           </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+
+  <section class="download-section">
+    <div class="container-md row">
+      <div class="download-text col-lg-7 ">
+        <h2>Download our app to get most out of it</h2>
+        <p>Thrown shy denote ten ladies though ask saw. Or by to he going think order event music. Incommode so intention defective at convinced. Led income months itself and houses you.</p>
+        <div class="download-text__btns">
+          <img alt="download_img" src="images/googleapp.download.svg">
+          <img alt="download_img" src="images/appstore-download.svg">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="container">
+      <div class="footer-content  row">
+        <ul class="footer-content__1 col-sm-6">
+          <li><span>CAR</span> Rental</li>
+          <li>We offers a big range of vehicles for all your driving needs. We have the perfect car to meet your needs.</li>
+          <li><a href="tel:123456789"> (91+) 0123-456-789</a></li>
+          <li><a href="mailto:  rentcar@gmail.com"> rentcar@gmail.com</a></li>
+          <li><a target="_blank" rel="noreferrer" href="" style="font-size: 14px;">Design by RV's InterNational</a></li>
+        </ul>
+        <ul class="footer-content__2 col-sm-6">
+          <li>Company</li>
+          <li><a href="#home">New Delhi</a></li>
+          <li><a href="#home">Careers</a></li>
+          <li><a href="#home">Mobile</a></li>
+          <li><a href="#home">Blog</a></li>
+          <li><a href="#home">How we work</a></li>
+        </ul>
+        <ul class="footer-content__2 col-sm-6" >
+          <li>Working Hours</li>
+          <li>Mon - Fri: 9:00AM - 9:00PM</li>
+          <li>Sat: 9:00AM - 19:00PM</li>
+          <li>Sun: Closed</li>
+        </ul>
+        <ul class="footer-content__2 col-sm-6">
+          <li>Subscription</li>
+          <li><p>Subscribe your Email address for latest news &amp; updates.</p></li>
+          <li><input type="email" placeholder="Enter Email Address"></li>
+          <li><button class="submit-email">Submit</button></li>
+        </ul>
+      </div>
+    </div>
+  </footer>
+
+</body>
+
+</html>
