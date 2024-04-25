@@ -456,6 +456,11 @@
         gap: 1rem;
         white-space: nowrap;
     }
+    /*     teams section  */
+     .team-container {
+        grid-template-columns: 1fr;
+        width: fit-content;
+    }
     
  }
 
