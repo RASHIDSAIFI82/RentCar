@@ -22,6 +22,17 @@
         justify-content: center;
         text-align: left;
     }
+    .team-container {
+        grid-template-columns: 1fr 1fr;
+        width: fit-content;
+    }
+    .contact-div {
+        grid-template-columns: 1fr;
+        text-align: center;
+    }
+    .contact-div__text {
+        margin: 0 auto 2rem;
+    }
         
 }
 
